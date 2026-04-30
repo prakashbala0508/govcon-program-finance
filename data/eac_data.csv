@@ -1,0 +1,4 @@
+contract_id,budget_at_completion,actual_cost_work_performed,pct_complete,estimate_at_completion,variance_at_completion,overrun_flag,data_source
+C001,4196400.0,3291656.16,0.74,4448184.0,-251784.0,True,Synthetic — EAC projections modeled from real contract ceiling
+C002,959500.0,871034.1,0.89,978690.0,-19190.0,True,Synthetic — EAC projections modeled from real contract ceiling
+C003,3523200.0,2768178.24,0.81,3417504.0,105696.0,False,Synthetic — EAC projections modeled from real contract ceiling

@@ -1,0 +1,4 @@
+contract_id,usaspending_award_id,contract_name,agency,naics_code,naics_description,contract_type,contract_ceiling,funded_ceiling,period_of_performance,base_fee_pct,status,data_source
+C001,75FCMC22F0046,CMS Marketplace State Security & Privacy Support,Dept. of Health & Human Services — CMS,541512,Computer Systems Design Services,Cost-Plus-Fixed-Fee (CPFF),8070000,6200000,Jan 2024 – Dec 2025,0.07,Active,USASpending.gov — real award (cumulative obligations)
+C002,70T02021F7560N005,DHS Program Management & Consulting Support,Dept. of Homeland Security,541611,Administrative Management Consulting Services,Time & Materials (T&M),1010000,1010000,Oct 2024 – Sep 2025,0.1,Active,USASpending.gov — real award (option year obligation)
+C003,75N97023F00001,NIH Hosting & Storage IT Support Services,Dept. of Health & Human Services — NIH,541512,Computer Systems Design Services,Firm-Fixed-Price (FFP),7340000,7340000,Aug 2023 – Jul 2025,0.12,Active,USASpending.gov — real award

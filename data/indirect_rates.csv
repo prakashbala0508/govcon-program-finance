@@ -1,0 +1,4 @@
+rate_type,current_rate,scenario_low,scenario_high,data_source
+Fringe,0.32,0.29,0.36,Benchmarked to DCAA published rate ranges for NAICS 541 professional services
+Overhead,0.45,0.41,0.51,Benchmarked to DCAA published rate ranges for NAICS 541 professional services
+G&A,0.12,0.1,0.15,Benchmarked to DCAA published rate ranges for NAICS 541 professional services

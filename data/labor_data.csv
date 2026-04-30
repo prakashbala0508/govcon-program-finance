@@ -1,0 +1,12 @@
+contract_id,labor_category,hours_budgeted,hours_actual,bill_rate,data_source
+C001,Program Manager,520,548,182,Synthetic hours — bill rates benchmarked to GSA Schedule for NAICS 541
+C001,Senior Systems Analyst,1040,1068,148,Synthetic hours — bill rates benchmarked to GSA Schedule for NAICS 541
+C001,Cybersecurity Analyst,1200,1185,138,Synthetic hours — bill rates benchmarked to GSA Schedule for NAICS 541
+C001,Junior Analyst,880,910,92,Synthetic hours — bill rates benchmarked to GSA Schedule for NAICS 541
+C002,Senior PM Consultant,480,462,195,Synthetic hours — bill rates benchmarked to GSA Schedule for NAICS 541
+C002,Management Consultant,640,658,145,Synthetic hours — bill rates benchmarked to GSA Schedule for NAICS 541
+C002,Project Coordinator,320,310,88,Synthetic hours — bill rates benchmarked to GSA Schedule for NAICS 541
+C003,IT Solutions Architect,680,665,198,Synthetic hours — bill rates benchmarked to GSA Schedule for NAICS 541
+C003,Systems Engineer,1400,1388,132,Synthetic hours — bill rates benchmarked to GSA Schedule for NAICS 541
+C003,Storage Specialist,920,895,118,Synthetic hours — bill rates benchmarked to GSA Schedule for NAICS 541
+C003,Junior Developer,760,780,88,Synthetic hours — bill rates benchmarked to GSA Schedule for NAICS 541

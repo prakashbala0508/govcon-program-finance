@@ -1,0 +1,4 @@
+contract_id,contract_name,funded_ceiling,cumulative_actuals,remaining_funding,avg_monthly_burn,months_until_ceiling,ceiling_flag,data_source
+C001,CMS Marketplace State Security & Privacy Support,6200000,4240297.25,1959702.75,353358.1,5.5,False,Funded ceiling from USASpending.gov; burn rate from synthetic actuals
+C002,DHS Program Management & Consulting Support,1010000,958721.41,51278.59,79893.45,0.6,True,Funded ceiling from USASpending.gov; burn rate from synthetic actuals
+C003,NIH Hosting & Storage IT Support Services,7340000,3551025.83,3788974.17,295918.82,12.8,False,Funded ceiling from USASpending.gov; burn rate from synthetic actuals
