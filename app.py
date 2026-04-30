@@ -1,4 +1,4 @@
-
+app_code = '''
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
@@ -66,10 +66,6 @@ with st.sidebar:
         "Funding and Burn Rate",
         "Data Sources and Methodology",
     ])
-    st.markdown("---")
-    st.markdown("### Filter")
-    options = ["All Contracts"] + contracts["contract_name"].tolist()
-    selected = st.selectbox("Contract", options)
     st.markdown("---")
     st.markdown(
         "<small style='color:#94a3b8'>"
@@ -308,6 +304,11 @@ elif module == "Variance Analysis":
         "Monthly actuals are synthetic projections calibrated to real USASpending.gov award values."
     )
 
+    col_filter, _ = st.columns([1, 3])
+    with col_filter:
+        options = ["All Contracts"] + contracts["contract_name"].tolist()
+        selected = st.selectbox("Filter by Contract", options)
+
     if selected == "All Contracts":
         data = actuals.copy()
         title = "All Contracts - Portfolio"
@@ -402,10 +403,10 @@ elif module == "Funding and Burn Rate":
 
         with st.expander(f"{row['contract_name']} | {status_label}", expanded=True):
             c1, c2, c3, c4 = st.columns(4)
-            c1.metric("Funded Ceiling",       f"${row['funded_ceiling']/1e6:.2f}M")
-            c2.metric("Costs Incurred",        f"${row['cumulative_actuals']/1e6:.2f}M")
-            c3.metric("Remaining Funding",     f"${row['remaining_funding']/1e3:.0f}K")
-            c4.metric("Months Until Ceiling",  f"{months_left:.1f} mo.")
+            c1.metric("Funded Ceiling",      f"${row['funded_ceiling']/1e6:.2f}M")
+            c2.metric("Costs Incurred",      f"${row['cumulative_actuals']/1e6:.2f}M")
+            c3.metric("Remaining Funding",   f"${row['remaining_funding']/1e3:.0f}K")
+            c4.metric("Months Until Ceiling", f"{months_left:.1f} mo.")
 
             gauge_color = "#dc2626" if flag else ("#d97706" if months_left < 4 else "#16a34a")
             fig = go.Figure(go.Indicator(
@@ -523,3 +524,10 @@ elif module == "Data Sources and Methodology":
         "GSA Multiple Award Schedule - Publicly available labor category bill rates. "
         "RELI Group Inc UEI: ZZEFBLYZN5B1 | CAGE: 6VJE6."
     )
+'''
+
+app_path = r"C:\Users\balap\anaconda_projects\govcon_program_finance\app.py"
+with open(app_path, "w", encoding="utf-8") as f:
+    f.write(app_code)
+
+print("✓ app.py updated successfully")
