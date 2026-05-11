@@ -207,8 +207,8 @@ elif module == "EAC Engine":
             st.plotly_chart(fig, use_container_width=True)
 
             if is_overrun:
-                commentary = (
-                    f"Contract is {row['pct_complete']*100:.0f}% complete. "
+                st.error(
+                    f"Analyst Commentary: Contract is {row['pct_complete']*100:.0f}% complete. "
                     f"EAC of ${row['estimate_at_completion']/1e6:.2f}M against a BAC of "
                     f"${row['budget_at_completion']/1e6:.2f}M yields a VAC of {vac_fmt}. "
                     f"Action required: Contract is projecting a cost overrun. "
@@ -216,14 +216,13 @@ elif module == "EAC Engine":
                     f"subcontractor invoices against deliverables. Corrective action plan due before next EAC cycle."
                 )
             else:
-                commentary = (
-                    f"Contract is {row['pct_complete']*100:.0f}% complete. "
+                st.success(
+                    f"Analyst Commentary: Contract is {row['pct_complete']*100:.0f}% complete. "
                     f"EAC of ${row['estimate_at_completion']/1e6:.2f}M against a BAC of "
                     f"${row['budget_at_completion']/1e6:.2f}M yields a VAC of {vac_fmt}. "
                     f"Contract is tracking within budget. Continue monitoring monthly actuals against EAC assumptions. "
                     f"Fee earned: ${row['fee_earned']/1e3:.0f}K. Fee at risk: ${row['fee_at_risk']/1e3:.0f}K."
                 )
-            st.markdown(f"**Analyst Commentary:** {commentary}")
 
 # ===================================================
 # MODULE 3 - INDIRECT RATE MODELER
