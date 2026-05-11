@@ -253,7 +253,6 @@ elif module == "Indirect Rate Modeler":
     ).reset_index(name="direct_labor")
     dl = dl.merge(contracts[["contract_id", "contract_name", "base_fee_pct"]], on="contract_id")
     dl["fringe"]       = dl["direct_labor"] * fringe
-    dl["fringe"]       = dl["direct_labor"] * fringe
     dl["overhead"]     = (dl["direct_labor"] + dl["fringe"]) * overhead
     dl["total_direct"] = dl["direct_labor"] + dl["fringe"] + dl["overhead"]
     dl["ga"]           = dl["total_direct"] * ga
